@@ -16,6 +16,8 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Check current directory
       run: pwd
+      - name: Ver rutas
+      run: ls
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
